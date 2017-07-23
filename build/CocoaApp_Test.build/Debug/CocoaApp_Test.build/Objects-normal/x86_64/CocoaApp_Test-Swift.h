@@ -147,13 +147,16 @@ SWIFT_CLASS("_TtC13CocoaApp_Test11AppDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class NSTextField;
 @class NSBundle;
 @class NSCoder;
 
 SWIFT_CLASS("_TtC13CocoaApp_Test14ViewController")
 @interface ViewController : NSViewController
+- (IBAction)ButtonClicked:(id _Nonnull)sender;
 - (void)viewDidLoad;
 @property (nonatomic) id _Nullable representedObject;
+@property (nonatomic, weak) IBOutlet NSTextField * _Null_unspecified nameField;
 - (nullable instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
